@@ -50,16 +50,16 @@ export default function AboutPage() {
                         </motion.div>
 
                         <motion.div
-                            className="relative bg-red-500 h-96 rounded-xl overflow-hidden shadow-xl"
+                            className="relative rounded-xl overflow-hidden shadow-xl"
                             initial={{ opacity: 0, x: 20 }}
                             whileInView={{ opacity: 1, x: 0 }}
                             viewport={{ once: true }}
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
                             <Image
-                                width={100}
-                                height={100}
-                                src="/director.jpg"
+                                width={1000}
+                                height={1000}
+                                src="/comp.jpg"
                                 alt="AI-Horizons students collaborating"
                                 className="w-full object-cover rounded-xl"
                             />
@@ -188,7 +188,7 @@ export default function AboutPage() {
                     </motion.div>
 
                     <div className="space-y-12">
-                        <motion.div
+                        {/* <motion.div
                             className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center"
                             initial={{ opacity: 0, y: 20 }}
                             whileInView={{ opacity: 1, y: 0 }}
@@ -264,7 +264,7 @@ export default function AboutPage() {
                                     </CardContent>
                                 </Card>
                             </div>
-                        </motion.div>
+                        </motion.div> */}
 
                         <motion.div
                             className="grid grid-cols-1 md:grid-cols-12 gap-8 items-center"
@@ -274,10 +274,10 @@ export default function AboutPage() {
                             transition={{ duration: 0.5, delay: 0.6 }}
                         >
                             <div className="md:col-span-1 flex justify-center">
-                                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">4</div>
+                                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center text-primary font-bold">1</div>
                             </div>
                             <div className="md:col-span-3">
-                                <h3 className="text-xl font-semibold mb-2">Today</h3>
+                                <h3 className="text-xl font-semibold mb-2">2025 - Today</h3>
                                 <p className="text-muted-foreground">Now serving over 500 students annually with a network of 100+ industry mentors from leading AI companies.</p>
                             </div>
                             <div className="md:col-span-8">
@@ -286,7 +286,7 @@ export default function AboutPage() {
                                         <p className="italic text-muted-foreground">
                                             &apos;What makes AI-Horizons special is our community. We&apos;ve created an ecosystem where students, alumni, mentors, and industry partners collaborate to push the boundaries of what&apos;s possible with AI while ensuring it&apos;s developed responsibly.&apos;
                                         </p>
-                                        <p className="mt-4 font-semibold">— James Okonkwo, CEO</p>
+                                        <p className="mt-4 font-semibold">— Benaiah Yusuf, Engineering Team Lead (Wootlab Innovations)</p>
                                     </CardContent>
                                 </Card>
                             </div>
@@ -296,7 +296,7 @@ export default function AboutPage() {
             </section>
 
             {/* Team Section */}
-            <section className="py-16 md:py-24 bg-muted/50">
+            {/* <section className="py-16 md:py-24 bg-muted/50">
                 <div className="container mx-auto px-4 md:px-6">
                     <motion.div
                         className="text-center max-w-3xl mx-auto mb-12"
@@ -322,13 +322,13 @@ export default function AboutPage() {
                                         width={100}
                                         height={100}
                                         src="/director.jpg"
-                                        alt="James Okonkwo"
+                                        alt="Chioma Okoro"
                                         className="object-cover w-full h-full"
                                     />
                                 </div>
                                 <CardContent className="p-6">
-                                    <h3 className="text-xl font-semibold mb-1">James Okonkwo</h3>
-                                    <p className="text-primary mb-4">Chief Executive Officer</p>
+                                    <h3 className="text-xl font-semibold mb-1">Chioma Okoro</h3>
+                                    <p className="text-primary mb-4">Chief Operating Officer</p>
                                     <p className="text-muted-foreground mb-4">Former AI Research Lead at Google with 15+ years of experience in machine learning and AI education.</p>
                                     <div className="flex space-x-3">
                                         <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -354,13 +354,13 @@ export default function AboutPage() {
                                         width={100}
                                         height={100}
                                         src="/director.jpg"
-                                        alt="Dr. Sarah Johnson"
+                                        alt="Chiamaka Jonathan"
                                         className="object-cover w-full h-full"
                                     />
                                 </div>
                                 <CardContent className="p-6">
-                                    <h3 className="text-xl font-semibold mb-1">Dr. Sarah Johnson</h3>
-                                    <p className="text-primary mb-4">Co-founder & Chief Technology Officer</p>
+                                    <h3 className="text-xl font-semibold mb-1">Chiamaka Jonathan</h3>
+                                    <p className="text-primary mb-4">General Manager</p>
                                     <p className="text-muted-foreground mb-4">PhD in Computer Science with specialization in deep learning. Previously led AI research teams at MIT and Stanford.</p>
                                     <div className="flex space-x-3">
                                         <a href="#" className="text-muted-foreground hover:text-primary transition-colors">
@@ -407,7 +407,7 @@ export default function AboutPage() {
                         </motion.div>
                     </div>
 
-                    {/* <motion.div
+                    <motion.div
             className="text-center mt-12"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -419,9 +419,9 @@ export default function AboutPage() {
                 View Full Team <ChevronRight className="h-4 w-4 ml-2" />
               </Link>
             </Button>
-          </motion.div> */}
+          </motion.div>
                 </div>
-            </section>
+            </section> */}
 
             {/* Call to Action Section */}
             <section className="py-16 md:py-24 bg-primary/5">

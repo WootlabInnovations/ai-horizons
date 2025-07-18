@@ -11,10 +11,10 @@ export default function TeamPage() {
     // Team members data
     const leadershipTeam = [
         {
-            name: "Dr. Sarah Johnson",
-            role: "Founder & CEO",
-            bio: "Former AI Research Lead at Google with 15+ years of experience in machine learning and AI ethics. PhD in Computer Science from Stanford University.",
-            image: "/team/sarah-johnson.jpg",
+            name: "Chioma Okoro",
+            role: "COO Wootlab Innovations",
+            bio: "",
+            image: "/chi.jpg",
             social: {
                 linkedin: "https://linkedin.com/in/sarahjohnson",
                 twitter: "https://twitter.com/sarahjohnson",
@@ -22,30 +22,30 @@ export default function TeamPage() {
             }
         },
         {
-            name: "Michael Chen",
-            role: "Chief Technology Officer",
-            bio: "Previously led AI development teams at Microsoft. Specializes in deep learning and neural networks with multiple published papers in top AI conferences.",
-            image: "/team/michael-chen.jpg",
+            name: "Chiamaka Jonathan",
+            role: "General Manager",
+            bio: "",
+            image: "/chiamaka.png",
             social: {
                 linkedin: "https://linkedin.com/in/michaelchen",
                 twitter: "https://twitter.com/michaelchen"
             }
         },
         {
-            name: "Dr. Amara Okafor",
-            role: "Director of Education",
+            name: "Benaiah Yusuf",
+            role: "Engineering Team Lead (Wootlab Innovations)",
             bio: "Education innovator with experience developing AI curricula at MIT. PhD in Educational Technology with a focus on adaptive learning systems.",
-            image: "/team/amara-okafor.jpg",
+            image: "/ben.jpg",
             social: {
                 linkedin: "https://linkedin.com/in/amaraokafor",
                 website: "https://amaraokafor.edu"
             }
         },
         {
-            name: "James Rodriguez",
-            role: "Head of Partnerships",
+            name: "Ayobami",
+            role: "Business Development Team Lead - Wootlab Innovations",
             bio: "Former Business Development Director at IBM's AI division. Extensive experience in creating industry partnerships and placement programs.",
-            image: "/team/james-rodriguez.jpg",
+            image: "/ayo.jpg",
             social: {
                 linkedin: "https://linkedin.com/in/jamesrodriguez",
                 twitter: "https://twitter.com/jamesrodriguez"
@@ -55,60 +55,32 @@ export default function TeamPage() {
 
     const mentors = [
         {
-            name: "Dr. Emily Zhang",
+            name: "Benaiah Yusuf",
             expertise: "Natural Language Processing",
             company: "OpenAI",
             bio: "Senior Research Scientist specializing in large language models and their applications in education and healthcare.",
-            image: "/team/emily-zhang.jpg"
+            image: "/ben.jpg"
         },
         {
-            name: "David Kwame",
+            name: "Chimdidu Ozowolu",
             expertise: "Computer Vision",
             company: "Tesla",
             bio: "Lead Engineer working on autonomous driving systems with expertise in real-time image processing and neural networks.",
-            image: "/team/david-kwame.jpg"
+            image: "/wootlab.png"
         },
         {
-            name: "Sophia Patel",
+            name: "Agaba Sylvester",
             expertise: "AI Ethics & Governance",
             company: "AI Ethics Institute",
             bio: "Policy advisor and researcher focused on creating ethical frameworks for AI deployment in critical sectors.",
-            image: "/team/sophia-patel.jpg"
+            image: "/passport.jpg"
         },
         {
             name: "Dr. Carlos Mendez",
             expertise: "Reinforcement Learning",
             company: "DeepMind",
             bio: "Research scientist working on advanced reinforcement learning algorithms for complex decision-making systems.",
-            image: "/team/carlos-mendez.jpg"
-        },
-        {
-            name: "Aisha Nakamura",
-            expertise: "AI for Healthcare",
-            company: "Mayo Clinic",
-            bio: "Medical AI specialist developing diagnostic and treatment recommendation systems using machine learning.",
-            image: "/team/aisha-nakamura.jpg"
-        },
-        {
-            name: "Robert Kim",
-            expertise: "Robotics & AI",
-            company: "Boston Dynamics",
-            bio: "Robotics engineer specializing in the integration of AI systems with physical robots for industrial and research applications.",
-            image: "/team/robert-kim.jpg"
-        },
-        {
-            name: "Maria Gonzalez",
-            expertise: "Data Science & Analytics",
-            company: "Netflix",
-            bio: "Lead Data Scientist working on recommendation systems and user behavior prediction models.",
-            image: "/team/maria-gonzalez.jpg"
-        },
-        {
-            name: "Dr. Thomas Weber",
-            expertise: "AI Research",
-            company: "ETH Zurich",
-            bio: "Professor of Computer Science leading research in generative models and their applications in creative industries.",
-            image: "/team/thomas-weber.jpg"
+            image: "/wootlab.png"
         }
     ];
 
@@ -271,7 +243,7 @@ export default function TeamPage() {
                             transition={{ duration: 0.5, delay: 0.2 }}
                         >
                             <Image
-                                src="/team/team-collaboration.jpg"
+                                src="/team.jpg"
                                 alt="AI-Horizons team collaboration"
                                 fill
                                 className="object-cover"
