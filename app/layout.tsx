@@ -1,9 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-
-import Navbar from "@/components/ui/shared/Navbar";
-import Footer from "@/components/ui/shared/Footer";
+import Navbar from "../components/ui/shared/Navbar";
+import Footer from "../components/ui/shared/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -17,7 +16,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "AI-Horizons - Building Tomorrow's AI Leaders Today",
-  description: "Empowering the next generation through hands-on AI education, practical projects, and industry mentorship.",
+  description:
+    "Empowering the next generation through hands-on AI education, practical projects, and industry mentorship.",
 };
 
 export default function RootLayout({
