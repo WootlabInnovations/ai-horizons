@@ -76,34 +76,34 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Programs</h3>
             <ul className="space-y-3 text-sm">
               <li>
-                <Link href="/programs/ai-fundamentals" className=" hover:text-primary transition-colors flex items-center gap-2">
+                <span className=" hover:text-primary transition-colors flex items-center gap-2">
                   <Code className="h-4 w-4" />
                   <span>AI Fundamentals</span>
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="/programs/machine-learning" className=" hover:text-primary transition-colors flex items-center gap-2">
+                <span className=" hover:text-primary transition-colors flex items-center gap-2">
                   <Lightbulb className="h-4 w-4" />
                   <span>Machine Learning</span>
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="/programs/deep-learning" className=" hover:text-primary transition-colors flex items-center gap-2">
+                <span className=" hover:text-primary transition-colors flex items-center gap-2">
                   <BookOpen className="h-4 w-4" />
                   <span>Deep Learning</span>
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="/programs/nlp" className=" hover:text-primary transition-colors flex items-center gap-2">
+                <span className=" hover:text-primary transition-colors flex items-center gap-2">
                   <Globe className="h-4 w-4" />
                   <span>Natural Language Processing</span>
-                </Link>
+                </span>
               </li>
               <li>
-                <Link href="/programs/computer-vision" className=" hover:text-primary transition-colors flex items-center gap-2">
+                <span className=" hover:text-primary transition-colors flex items-center gap-2">
                   <Sparkles className="h-4 w-4" />
                   <span>Computer Vision</span>
-                </Link>
+                </span>
               </li>
             </ul>
           </div>
@@ -132,7 +132,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className=" hover:text-primary transition-colors">
+                <Link href="#faq" className=" hover:text-primary transition-colors">
                   FAQ
                 </Link>
               </li>
@@ -158,12 +158,12 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/partners" className=" hover:text-primary transition-colors">
+                <Link href="#partner" className=" hover:text-primary transition-colors">
                   Partners
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className=" hover:text-primary transition-colors">
+                <Link href="/help" className=" hover:text-primary transition-colors">
                   Contact Us
                 </Link>
               </li>
@@ -208,12 +208,11 @@ export default function Footer() {
             <h3 className="text-lg font-semibold mb-4">Contact Us</h3>
             <p className=" mb-2">Have questions or need assistance?</p>
             <p className=" mb-2">Email us at: <a href="mailto:info@ai-horizons.com" className="text-primary hover:underline">info@ai-horizons.com</a></p>
-            <p className="">Call us: <a href="tel:+11234567890" className="text-primary hover:underline">+1 (123) 456-7890</a></p>
+            <p className="">Call us: <a href="tel:+2349082716744" className="text-primary hover:underline">+2349082716744</a></p>
           </div>
           <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-4">Locations</h3>
-            <p className=" mb-2"><strong>Headquarters:</strong> 123 AI Street, San Francisco, CA 94105</p>
-            <p className=""><strong>Satellite Office:</strong> 456 Tech Avenue, New York, NY 10001</p>
+            <p className=" mb-2"><strong>Headquarters:</strong> 29 Usuma Street, Maitama, Nigeria</p>
           </div>
           <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-4">Hours</h3>

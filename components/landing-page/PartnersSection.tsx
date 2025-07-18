@@ -14,7 +14,7 @@ export default function PartnersSection() {
   ];
 
   return (
-    <section className="py-16 bg-muted/30">
+    <section id='partner' className="py-16 bg-muted/30">
       <div className="container mx-auto px-4 md:px-6">
         <motion.div
           className="text-center mb-10"

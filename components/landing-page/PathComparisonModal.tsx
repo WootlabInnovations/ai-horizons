@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
-import { CheckCircle, X, ChevronRight } from 'lucide-react';
+import { CheckCircle, X } from 'lucide-react';
 
 interface PathComparisonModalProps {
   isOpen: boolean;
@@ -13,13 +13,13 @@ export default function PathComparisonModal({ isOpen, onClose }: PathComparisonM
   if (!isOpen) return null;
   
   return (
-    <motion.div 
+    <motion.div
       className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       exit={{ opacity: 0 }}
     >
-      <motion.div 
+      <motion.div
         className="bg-card border rounded-xl shadow-lg max-w-4xl w-full max-h-[90vh] overflow-auto"
         initial={{ scale: 0.9, y: 20 }}
         animate={{ scale: 1, y: 0 }}
@@ -32,7 +32,7 @@ export default function PathComparisonModal({ isOpen, onClose }: PathComparisonM
               <X className="h-4 w-4" />
             </Button>
           </div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-primary">AI Innovators (Tech)</h3>
@@ -55,7 +55,7 @@ export default function PathComparisonModal({ isOpen, onClose }: PathComparisonM
                 </li>
               </ul>
             </div>
-            
+
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-secondary">AI Strategists (Business)</h3>
               <ul className="space-y-2">
@@ -77,7 +77,7 @@ export default function PathComparisonModal({ isOpen, onClose }: PathComparisonM
                 </li>
               </ul>
             </div>
-            
+
             <div className="space-y-4">
               <h3 className="text-xl font-semibold text-purple-500">AI Creators (Creative)</h3>
               <ul className="space-y-2">
@@ -100,14 +100,14 @@ export default function PathComparisonModal({ isOpen, onClose }: PathComparisonM
               </ul>
             </div>
           </div>
-          
+
           <div className="mt-8 pt-6 border-t">
             <h3 className="text-xl font-semibold mb-4">Which path is right for you?</h3>
             <p className="mb-4">All paths include core AI fundamentals, ethics training, and collaborative projects. Choose based on your background and career goals.</p>
-            <Button onClick={onClose} className="w-full sm:w-auto">
+            {/* <Button onClick={onClose} className="w-full sm:w-auto">
               Take the Path Quiz
               <ChevronRight className="h-4 w-4" />
-            </Button>
+            </Button> */}
           </div>
         </div>
       </motion.div>
