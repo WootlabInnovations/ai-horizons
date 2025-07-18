@@ -1,10 +1,28 @@
 'use client';
 
-import { motion } from 'framer-motion';
+import { useRef } from 'react';
+import { motion, useScroll, useTransform } from 'framer-motion';
 
 export default function SuccessStoriesSection() {
+  // Create refs for each story card
+  const containerRef = useRef(null);
+  const firstCardRef = useRef(null);
+  const secondCardRef = useRef(null);
+  const thirdCardRef = useRef(null);
+  
+  // Set up scroll animations
+  const { scrollYProgress } = useScroll({
+    target: containerRef,
+    offset: ['start end', 'end start']
+  });
+  
+  // Transform values for each card based on scroll position
+  const firstCardY = useTransform(scrollYProgress, [0, 0.5, 1], [0, -50, 0]);
+  const secondCardY = useTransform(scrollYProgress, [0, 0.5, 1], [0, 0, 0]);
+  const thirdCardY = useTransform(scrollYProgress, [0, 0.5, 1], [0, 50, 0]);
+  
   return (
-    <section className="py-16 md:py-24 bg-muted/50">
+    <section className="py-16 md:py-24 bg-muted/50 overflow-hidden" ref={containerRef}>
       <div className="container mx-auto px-4 md:px-6">
         <motion.div 
           className="text-center mb-12"
@@ -17,13 +35,16 @@ export default function SuccessStoriesSection() {
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Hear from our alumni who have transformed their careers through our program.</p>
         </motion.div>
         
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 relative">
           <motion.div 
-            className="bg-card border rounded-xl p-6 shadow-sm"
+            ref={firstCardRef}
+            className="bg-card border rounded-xl p-6 shadow-sm md:transform-gpu"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.1 }}
+            style={{ y: firstCardY }}
+            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
           >
             <div className="flex flex-col gap-4">
               <div className="text-4xl text-primary">&quot;</div>
@@ -36,11 +57,14 @@ export default function SuccessStoriesSection() {
           </motion.div>
           
           <motion.div 
-            className="bg-card border rounded-xl p-6 shadow-sm"
+            ref={secondCardRef}
+            className="bg-card border rounded-xl p-6 shadow-sm md:transform-gpu"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
+            style={{ y: secondCardY }}
+            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
           >
             <div className="flex flex-col gap-4">
               <div className="text-4xl text-secondary">&quot;</div>
@@ -53,11 +77,14 @@ export default function SuccessStoriesSection() {
           </motion.div>
           
           <motion.div 
-            className="bg-card border rounded-xl p-6 shadow-sm"
+            ref={thirdCardRef}
+            className="bg-card border rounded-xl p-6 shadow-sm md:transform-gpu"
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.3 }}
+            style={{ y: thirdCardY }}
+            whileHover={{ scale: 1.03, transition: { duration: 0.2 } }}
           >
             <div className="flex flex-col gap-4">
               <div className="text-4xl text-purple-500">&quot;</div>
