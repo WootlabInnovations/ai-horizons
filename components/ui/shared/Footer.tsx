@@ -2,8 +2,8 @@
 
 import Link from 'next/link';
 import { Sparkles, Github, Linkedin, Twitter, Youtube, Instagram, ArrowRight, Globe, BookOpen, Lightbulb, Code } from 'lucide-react';
-import { Button } from '@/components/ui/button';
 import { useState } from 'react';
+import { Button } from '../button';
 
 export default function Footer() {
   const [email, setEmail] = useState('');

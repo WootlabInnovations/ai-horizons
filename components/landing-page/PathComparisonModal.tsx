@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { Button } from '@/components/ui/button';
+import { Button } from '../ui/button';
 import { CheckCircle, X } from 'lucide-react';
 
 interface PathComparisonModalProps {
@@ -11,7 +11,7 @@ interface PathComparisonModalProps {
 
 export default function PathComparisonModal({ isOpen, onClose }: PathComparisonModalProps) {
   if (!isOpen) return null;
-  
+
   return (
     <motion.div
       className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50 flex items-center justify-center p-4"

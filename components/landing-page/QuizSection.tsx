@@ -2,9 +2,9 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '@/components/ui/card';
 import { Code, Briefcase, PenTool, ChevronRight, ArrowRight, RotateCcw } from 'lucide-react';
+import { Button } from '../ui/button';
+import { Card, CardContent, CardFooter, CardHeader, CardTitle } from '../ui/card';
 
 type PathWeight = {
   tech: number;
