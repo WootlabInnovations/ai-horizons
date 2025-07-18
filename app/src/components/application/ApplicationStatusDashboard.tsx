@@ -39,7 +39,7 @@ export default function ApplicationStatusDashboard({ applicationId }: Props) {
         <strong>{currentState?.label || "Loading..."}</strong>
       </div>
       <p className={`text-sm mt-2`}>Next Update: July 20, 2025</p>
-      <div className={`mt-4 flex gap-3`}>
+      <div className={`mt-4 flex gap-4`}>
         <button className={`bg-yellow-500 px-4 py-2 text-white rounded`}>
           Edit Application
         </button>
