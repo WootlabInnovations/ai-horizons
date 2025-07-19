@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 import { quizQuestions } from "@/src/lib/quizData";
 import { useState } from "react";

@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 import { supabase } from "@/src/lib/supabaseClient";
 
 export default async function handler(req: any, res: any) {
