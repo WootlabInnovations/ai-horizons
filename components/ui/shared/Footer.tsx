@@ -224,20 +224,28 @@ export default function Footer() {
         {/* Bottom section with copyright */}
         <div className="pt-8 border-t border-black">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-            <p className="text-center text-sm  md:text-left">
-              © {new Date().getFullYear()} AI-Horizons. All rights reserved.
-            </p>
+            <div className="flex flex-col items-center md:items-start gap-1">
+              <p className="text-center text-sm md:text-left">
+                © {new Date().getFullYear()} AI-Horizons. All rights reserved.
+              </p>
+
+            </div>
+            <div>
+              <p className="text-sm text-muted-foreground">
+                Powered by <Link href="https://wootlab.ng" target="_blank" rel="noopener noreferrer" className="hover:underline underline-offset-4 text-primary">Wootlab Innovations</Link>
+              </p>
+            </div>
             <div className="flex flex-wrap justify-center gap-4 md:justify-end">
-              <Link href="/terms" className="text-xs  hover:underline underline-offset-4">
+              <Link href="/terms" className="text-xs hover:underline underline-offset-4">
                 Terms of Service
               </Link>
-              <Link href="/privacy" className="text-xs  hover:underline underline-offset-4">
+              <Link href="/privacy" className="text-xs hover:underline underline-offset-4">
                 Privacy Policy
               </Link>
-              <Link href="/cookie-policy" className="text-xs  hover:underline underline-offset-4">
+              <Link href="/cookie-policy" className="text-xs hover:underline underline-offset-4">
                 Cookie Policy
               </Link>
-              <Link href="/sitemap" className="text-xs  hover:underline underline-offset-4">
+              <Link href="/sitemap" className="text-xs hover:underline underline-offset-4">
                 Sitemap
               </Link>
             </div>

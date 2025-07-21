@@ -51,13 +51,13 @@ export default function HeroSection() {
                     >
                         <Button
                             size="lg"
-                            className="bg-primary text-white font-semibold hover:bg-primary/90 transition-all duration-300"
+                            className="bg-primary w-1/2 h-12 text-xl text-white font-semibold hover:bg-primary/90 transition-all duration-300"
                         >
                             Apply Now
                         </Button>
-                        <button className="text-white underline text-base hover:text-primary/90 transition-all duration-300">
+                        <Button variant='outline' className="text-primary w-1/2 h-12 text-xl underline hover:text-primary/90 transition-all duration-300">
                             Explore Programs
-                        </button>
+                        </Button>
                     </motion.div>
 
                     <motion.div
