@@ -68,11 +68,11 @@ export default function FAQSection() {
     },
     {
       question: "Is this a paid internship?",
-      answer: "Yes, all interns receive a competitive stipend, as well as potential performance bonuses based on project outcomes."
+      answer: "No, Its not a paid internship"
     },
     {
       question: "What is the time commitment?",
-      answer: "The summer program runs for 10 weeks full-time. We also offer part-time options during the academic year."
+      answer: "The summer program runs for 8 weeks full-time. We also offer part-time options during the academic year."
     },
     {
       question: "Can international students apply?",
@@ -80,7 +80,7 @@ export default function FAQSection() {
     },
     {
       question: "What happens after the internship ends?",
-      answer: "Top performers may receive job offers from our partner companies or be invited to join our research team. All participants join our alumni network with ongoing resources and opportunities."
+      answer: "Top performers may receive paid internship from our partner companies or be invited to join our research team. All participants join our alumni network with ongoing resources and opportunities."
     }
   ];
   

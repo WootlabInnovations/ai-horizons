@@ -98,7 +98,7 @@ export default function HelpPage() {
                     </div>
                     <div>
                       <h3 className="font-semibold mb-1">Call Us</h3>
-                      <p className="text-muted-foreground mb-2">Monday-Friday, 9:00 AM - 6:00 PM PST</p>
+                      <p className="text-muted-foreground mb-2">Monday-Friday, 9:00 AM - 5:00 PM PST</p>
                       <a href="tel:+2349082716744" className="text-primary hover:underline">
                         +234 908 271 6744
                       </a>
@@ -127,7 +127,7 @@ export default function HelpPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Business Hours</h3>
                       <p className="text-muted-foreground mb-2">When we&apos;re available</p>
-                      <p className="mb-1"><strong>Monday-Friday:</strong> 9:00 AM - 6:00 PM PST</p>
+                      <p className="mb-1"><strong>Monday-Friday:</strong> 9:00 AM - 5:00 PM PST</p>
                       <p><strong>Saturday-Sunday:</strong> Closed</p>
                     </div>
                   </CardContent>
