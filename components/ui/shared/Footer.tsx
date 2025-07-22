@@ -216,7 +216,7 @@ export default function Footer() {
           </div>
           <div className="flex flex-col">
             <h3 className="text-lg font-semibold mb-4">Hours</h3>
-            <p className=" mb-2"><strong>Monday-Friday:</strong> 9:00 AM - 5:00 PM PST</p>
+            <p className=" mb-2"><strong>Monday-Friday:</strong> 9:00 AM - 5:00 PM</p>
             <p className=""><strong>Saturday-Sunday:</strong> Closed</p>
           </div>
         </div>

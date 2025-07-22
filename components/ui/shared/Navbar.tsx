@@ -23,7 +23,7 @@ export default function Navbar() {
                         <div className="relative flex items-center">
                             <Sparkles className="h-6 w-6 text-primary" />
                             <span className="ml-2 text-xl font-bold bg-gradient-to-r from-primary to-purple-600 bg-clip-text text-transparent">
-                                AI-Horizons
+                                Elevate
                             </span>
                         </div>
                     </Link>

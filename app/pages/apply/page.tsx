@@ -29,7 +29,7 @@ export default function ApplyPage() {
       <main className={`min-h-screen bg-white py-10`}>
         <ToastProvider />
         <h1 className={`text-3xl text-center font-bold mb-6`}>
-          AI Horizons Application
+      Elevate Application
         </h1>
         {!applicationId ? (
           <MultiStepForm onSuccess={handleSubmitted} />

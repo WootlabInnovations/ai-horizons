@@ -110,7 +110,7 @@ export default function FAQSection() {
             viewport={{ once: true }}
             transition={{ duration: 0.7, delay: 0.1 }}
           >
-            Everything you need to know about the AI Horizons Summer Internship Program.
+            Everything you need to know about the Elevate Summer Internship Program.
           </motion.p>
         </motion.div>
         

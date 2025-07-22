@@ -14,7 +14,7 @@ export default function WhyChooseSection() {
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
         >
-          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Why Choose AI Horizons?</h2>
+          <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Why Choose Elevate?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">Our program is designed to provide you with the skills, experience, and connections needed to thrive in the AI industry.</p>
         </motion.div>
         

@@ -48,7 +48,7 @@ export default function SuccessStoriesSection() {
           >
             <div className="flex flex-col gap-4">
               <div className="text-4xl text-primary">&quot;</div>
-              <p className="italic">The AI Horizons internship was the turning point in my career. The hands-on projects and mentorship helped me land a role at a leading AI research lab.</p>
+              <p className="italic">The Elevate internship was the turning point in my career. The hands-on projects and mentorship helped me land a role at a leading AI research lab.</p>
               <div className="mt-4">
                 <p className="font-semibold">Sarah Chen</p>
                 <p className="text-sm text-muted-foreground">AI Research Engineer, DeepMind</p>

@@ -39,7 +39,7 @@ export default function HeroSection() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
                     >
-                        Join AI Horizons and master cutting-edge AI skills through hands-on projects, 
+                        Join Elevate and master cutting-edge AI skills through hands-on projects,
                         expert mentorship, and a supportive community of innovators.
                     </motion.p>
 
@@ -105,6 +105,25 @@ export default function HeroSection() {
                     </motion.div>
                 </div>
             </div>
+            
+            <div className="absolute bottom-0 left-0 w-full overflow-hidden z-10">
+                <motion.svg
+                    viewBox="0 0 1040 120"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="w-full h-full"
+                    preserveAspectRatio="none"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.9, ease: "easeOut" }}
+                >
+                    <path
+                        d="M0 120L48 108C96 96 192 72 288 66C384 60 480 72 576 78C672 84 768 84 864 78C960 72 1056 60 1152 54C1248 48 1344 48 1392 48L1440 48V120H1392C1344 120 1248 120 1152 120C1056 120 960 120 864 120C768 120 672 120 576 120C480 120 384 120 288 120C192 120 96 120 48 120H0Z"
+                        fill="white"
+                    />
+                </motion.svg>
+            </div>
+            
         </section>
     );
 }
