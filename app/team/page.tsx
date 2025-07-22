@@ -3,55 +3,55 @@
 import { motion } from 'framer-motion';
 import { Card, CardContent } from '../../components/ui/card';
 import { Button } from '../../components/ui/button';
-import { Linkedin, Twitter, Globe, ChevronRight, Users, Sparkles, BookOpen, Award } from 'lucide-react';
+import { ChevronRight, Users, Sparkles, BookOpen, Award } from 'lucide-react';
 import Link from 'next/link';
 import Image from 'next/image';
 
 export default function TeamPage() {
     // Team members data
-    const leadershipTeam = [
-        {
-            name: "Chioma Okoro",
-            role: "COO Wootlab Innovations",
-            bio: "",
-            image: "/chi.jpg",
-            social: {
-                linkedin: "https://linkedin.com/in/sarahjohnson",
-                twitter: "https://twitter.com/sarahjohnson",
-                website: "https://sarahjohnson.com"
-            }
-        },
-        {
-            name: "Chiamaka Jonathan",
-            role: "General Manager",
-            bio: "",
-            image: "/chiamaka.png",
-            social: {
-                linkedin: "https://linkedin.com/in/michaelchen",
-                twitter: "https://twitter.com/michaelchen"
-            }
-        },
-        {
-            name: "Benaiah Yusuf",
-            role: "Engineering Team Lead (Wootlab Innovations)",
-            bio: "Education innovator with experience developing AI curricula at MIT. PhD in Educational Technology with a focus on adaptive learning systems.",
-            image: "/ben.jpg",
-            social: {
-                linkedin: "https://linkedin.com/in/amaraokafor",
-                website: "https://amaraokafor.edu"
-            }
-        },
-        {
-            name: "Ayobami",
-            role: "Business Development Team Lead - Wootlab Innovations",
-            bio: "Former Business Development Director at IBM's AI division. Extensive experience in creating industry partnerships and placement programs.",
-            image: "/ayo.jpg",
-            social: {
-                linkedin: "https://linkedin.com/in/jamesrodriguez",
-                twitter: "https://twitter.com/jamesrodriguez"
-            }
-        }
-    ];
+    // const leadershipTeam = [
+    //     {
+    //         name: "Chioma Okoro",
+    //         role: "COO Wootlab Innovations",
+    //         bio: "",
+    //         image: "/chi.jpg",
+    //         social: {
+    //             linkedin: "https://linkedin.com/in/sarahjohnson",
+    //             twitter: "https://twitter.com/sarahjohnson",
+    //             website: "https://sarahjohnson.com"
+    //         }
+    //     },
+    //     {
+    //         name: "Chiamaka Jonathan",
+    //         role: "General Manager",
+    //         bio: "",
+    //         image: "/chiamaka.png",
+    //         social: {
+    //             linkedin: "https://linkedin.com/in/michaelchen",
+    //             twitter: "https://twitter.com/michaelchen"
+    //         }
+    //     },
+    //     {
+    //         name: "Benaiah Yusuf",
+    //         role: "Engineering Team Lead (Wootlab Innovations)",
+    //         bio: "Education innovator with experience developing AI curricula at MIT. PhD in Educational Technology with a focus on adaptive learning systems.",
+    //         image: "/ben.jpg",
+    //         social: {
+    //             linkedin: "https://linkedin.com/in/amaraokafor",
+    //             website: "https://amaraokafor.edu"
+    //         }
+    //     },
+    //     {
+    //         name: "Ayobami",
+    //         role: "Business Development Team Lead - Wootlab Innovations",
+    //         bio: "Former Business Development Director at IBM's AI division. Extensive experience in creating industry partnerships and placement programs.",
+    //         image: "/ayo.jpg",
+    //         social: {
+    //             linkedin: "https://linkedin.com/in/jamesrodriguez",
+    //             twitter: "https://twitter.com/jamesrodriguez"
+    //         }
+    //     }
+    // ];
 
     const mentors = [
         {

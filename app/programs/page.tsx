@@ -3,7 +3,7 @@
 import { useState, useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { Button } from '../../components/ui/button';
-import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from '../../components/ui/card';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../../components/ui/card';
 import { Calendar, ArrowRight, BookOpen, Users, Code, Lightbulb, Award, Rocket, GraduationCap, CheckCircle } from 'lucide-react';
 
 export default function ProgramsPage() {

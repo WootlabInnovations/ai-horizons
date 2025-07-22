@@ -1,22 +1,44 @@
 "use client";
+
 import { quizQuestions } from "@/src/lib/quizData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+
+interface QuizOption {
+  text: string;
+  value: string;
+}
+
+interface QuizAnswer {
+  text: string;
+  value: string;
+}
 
 export default function PathQuiz({
-  onFinish,
+  defaultAnswers = [],
+  onAnswerChange,
 }: {
-  onFinish: (answers: any[]) => void;
+  defaultAnswers?: QuizAnswer[];
+  onAnswerChange: (answers: QuizAnswer[]) => void;
 }) {
-  const [step, setStep] = useState(0);
-  const [answers, setAnswers] = useState<any[]>([]);
+  const [step, setStep] = useState(defaultAnswers.length);
+  const [answers, setAnswers] = useState<QuizAnswer[]>(defaultAnswers);
 
-  const handleAnswer = (option: any) => {
-    const updated = [...answers, option];
+  useEffect(() => {
+    onAnswerChange(answers);
+  }, [answers, onAnswerChange]);
+
+  const handleAnswer = (option: QuizOption) => {
+    const updated = [...answers.slice(0, step), option];
     setAnswers(updated);
+
     if (step + 1 < quizQuestions.length) {
       setStep(step + 1);
-    } else {
-      onFinish(updated);
+    }
+  };
+
+  const goBack = () => {
+    if (step > 0) {
+      setStep((prev) => prev - 1);
     }
   };
 
@@ -24,26 +46,46 @@ export default function PathQuiz({
   const progress = ((step + 1) / quizQuestions.length) * 100;
 
   return (
-    <div className={`p-4 max-w-md mx-auto`}>
-      <div className={`h-2 bg-gray-300 rounded mb-4`}>
+    <div className="p-4 max-w-md mx-auto space-y-6">
+      <div className="h-2 bg-gray-300 rounded">
         <div
-          className={`bg-blue-500 h-2 rounded`}
+          className="bg-blue-500 h-2 rounded transition-all duration-300"
           style={{ width: `${progress}%` }}
         ></div>
       </div>
-      <h3 className={`text-lg font-semibold mb-2`}>{current.question}</h3>
-      <ul className={`space-y-2`}>
-        {current.options.map((opt: any, idx: any) => (
-          <li key={idx}>
-            <button
-              onClick={() => handleAnswer(opt)}
-              className={`w-full p-2 border rounded hover:bg-blue-100`}
-            >
-              {opt.text}
-            </button>
-          </li>
-        ))}
+
+      <h3 className="text-lg font-semibold mb-2">{current.question}</h3>
+
+      <ul className="space-y-3">
+        {current.options.map((opt: QuizOption, idx: number) => {
+          const isSelected = answers[step]?.value === opt.value;
+          return (
+            <li key={idx}>
+              <button
+                type="button"
+                onClick={() => handleAnswer(opt)}
+                className={`w-full p-3 border rounded transition-all ${
+                  isSelected
+                    ? "bg-blue-100 border-blue-500"
+                    : "hover:bg-gray-100"
+                }`}
+              >
+                {opt.text}
+              </button>
+            </li>
+          );
+        })}
       </ul>
+
+      {step > 0 && (
+        <button
+          type="button"
+          onClick={goBack}
+          className="text-blue-500 underline text-sm"
+        >
+          ← Go Back
+        </button>
+      )}
     </div>
   );
 }
