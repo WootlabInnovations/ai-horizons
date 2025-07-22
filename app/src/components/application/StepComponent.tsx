@@ -1,9 +1,9 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useFormContext } from "react-hook-form";
 import DragDropUpload from "./DragDropUpload";
 import PathQuiz from "./PathQuiz";
+import Image from "next/image";
 
 export function Step1() {
   const {
@@ -118,7 +118,7 @@ export function Step2() {
 export function Step3({
   setValue,
 }: {
-  setValue: (key: string, value: any) => void;
+  setValue: (key: string, value: number[] | string[]) => void;
 }) {
   const { getValues } = useFormContext();
   const defaultAnswers = getValues("quizAnswers") || [];
@@ -134,7 +134,7 @@ export function Step3({
 export function Step4({
   setValue,
 }: {
-  setValue: (key: string, value: any) => void;
+  setValue: (key: string, value: File[] | string[] | { name: string; url: string }[] | null) => void;
 }) {
   const {
     register,
@@ -218,7 +218,7 @@ export function Step5() {
           <h5 className="font-semibold text-gray-700 mb-1">Path Quiz</h5>
           {Array.isArray(data.quizAnswers) && data.quizAnswers.length > 0 ? (
             <ul className="list-disc list-inside">
-              {data.quizAnswers.map((answer: any, i: number) => (
+              {data.quizAnswers.map((answer: { text: string }, i: number) => (
                 <li key={i}>
                   <strong>Q{i + 1}:</strong> {answer.text}
                 </li>
@@ -242,7 +242,9 @@ export function Step5() {
               {data.portfolio.map((file: File, i: number) => (
                 <div key={i}>
                   {file.type.startsWith("image/") ? (
-                    <img
+                    <Image
+                      height={100}
+                      width={100}
                       src={URL.createObjectURL(file)}
                       alt={`uploaded-${i}`}
                       className="h-20 w-full object-contain rounded border"

@@ -4,6 +4,7 @@ import { useDropzone } from "react-dropzone";
 import { useState } from "react";
 import { toast } from "sonner";
 import { supabase } from "@/src/lib/supabaseClient";
+import Image from "next/image";
 
 export default function DragDropUpload({
   onDrop,
@@ -25,14 +26,14 @@ export default function DragDropUpload({
       for (const file of acceptedFiles) {
         const filePath = `user_uploads/${Date.now()}-${file.name}`;
 
-        const { data, error } = await supabase.storage
-          .from("portfolios")
-          .upload(filePath, file);
+        // const { data, error } = await supabase.storage
+        //   .from("portfolios")
+        //   .upload(filePath, file);
 
-        if (error) {
-          toast.error(`Failed to upload ${file.name}`);
-          continue;
-        }
+        // if (error) {
+        //   toast.error(`Failed to upload ${file.name}`);
+        //   continue;
+        // }
 
         const { data: urlData } = supabase.storage
           .from("portfolios")
@@ -73,7 +74,9 @@ export default function DragDropUpload({
       )}
       <div className={`grid grid-cols-2 gap-2 mt-4`}>
         {previews.map((src, i) => (
-          <img
+          <Image
+            width={100}
+            height={100}
             key={i}
             src={src}
             alt={`file-preview-${i}`}
