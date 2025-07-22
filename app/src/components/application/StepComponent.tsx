@@ -126,7 +126,7 @@ export function Step3({
   return (
     <PathQuiz
       defaultAnswers={defaultAnswers}
-      onAnswerChange={(answers) => setValue("quizAnswers", answers)}
+      onAnswerChange={(answers) => setValue("quizAnswers", answers.map(answer => answer.value))}
     />
   );
 }

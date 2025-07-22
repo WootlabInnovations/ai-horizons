@@ -1,24 +1,33 @@
-/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { quizQuestions } from "@/src/lib/quizData";
 import { useEffect, useState } from "react";
 
+interface QuizOption {
+  text: string;
+  value: string;
+}
+
+interface QuizAnswer {
+  text: string;
+  value: string;
+}
+
 export default function PathQuiz({
   defaultAnswers = [],
   onAnswerChange,
 }: {
-  defaultAnswers?: any[];
-  onAnswerChange: (answers: any[]) => void;
+  defaultAnswers?: QuizAnswer[];
+  onAnswerChange: (answers: QuizAnswer[]) => void;
 }) {
   const [step, setStep] = useState(defaultAnswers.length);
-  const [answers, setAnswers] = useState<any[]>(defaultAnswers);
+  const [answers, setAnswers] = useState<QuizAnswer[]>(defaultAnswers);
 
   useEffect(() => {
     onAnswerChange(answers);
   }, [answers, onAnswerChange]);
 
-  const handleAnswer = (option: any) => {
+  const handleAnswer = (option: QuizOption) => {
     const updated = [...answers.slice(0, step), option];
     setAnswers(updated);
 
@@ -48,7 +57,7 @@ export default function PathQuiz({
       <h3 className="text-lg font-semibold mb-2">{current.question}</h3>
 
       <ul className="space-y-3">
-        {current.options.map((opt: any, idx: number) => {
+        {current.options.map((opt: QuizOption, idx: number) => {
           const isSelected = answers[step]?.value === opt.value;
           return (
             <li key={idx}>
