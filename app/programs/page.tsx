@@ -218,10 +218,10 @@ export default function ProgramsPage() {
             </section>
 
             {/* Program Timeline */}
-            <section className="py-16 md:py-24 bg-muted/30" ref={containerRef}>
+            <section className="py-12 md:py-16 bg-muted/30" ref={containerRef}>
                 <div className="container mx-auto px-4 md:px-6">
                     <motion.div
-                        className="text-center mb-16"
+                        className="text-center mb-12"
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         viewport={{ once: true }}
@@ -291,7 +291,7 @@ export default function ProgramsPage() {
                         </div>
 
                         {/* Timeline items */}
-                        <div className="space-y-24">
+                        <div className="space-y-12">
                             {programWeeks.map((week, index) => (
                                 <motion.div
                                     key={week.week}
@@ -308,7 +308,7 @@ export default function ProgramsPage() {
 
                                     {/* Content card */}
                                     <motion.div
-                                        className={`w-5/12 ${index % 2 === 0 ? 'pr-16 text-right' : 'pl-16 text-left'}`}
+                                        className={`w-5/12 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}
                                         whileHover={{ y: -5, transition: { duration: 0.2 } }}
                                     >
                                         <Card className="overflow-hidden">
