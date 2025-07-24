@@ -32,7 +32,7 @@ export default function TeamPage() {
             expertise: "Software Engineer",
             company: "Wootlab Innovations",
             bio: "Creative problem-solver with a passion for clean code and user-centric design. Specializes in modern web technologies and API development, bringing fresh perspectives to complex technical challenges.",
-            image: "/partner/ibm.svg",
+            image: "/chimdi.jpg",
             linkedin: "https://linkedin.com/in/chimdidu-ozowolu",
             twitter: "https://twitter.com/chimdidu_oz"
         },
@@ -44,6 +44,15 @@ export default function TeamPage() {
             image: "/passport.jpg",
             linkedin: "https://linkedin.com/in/agaba-sylvester",
             twitter: "https://twitter.com/agaba_sylvester"
+        },
+        {
+            name: "James Ogbodo",
+            expertise: "Media & Creative Director",
+            company: "Wootlab Innovations",
+            bio: "Experienced media and creative director with a strong background in digital marketing, content strategy, and brand management. Specializes in developing engaging content that resonates with target audiences and drives business growth.",
+            image: "/james.jpg",
+            linkedin: "https://linkedin.com/in/james-ogbodo",
+            twitter: "https://twitter.com/james_ogbodo"
         },
     ];
 
@@ -266,12 +275,12 @@ export default function TeamPage() {
                                                 rel="noopener noreferrer"
                                                 className="text-blue-600 hover:text-blue-800 transition-colors"
                                             >
-                                                <Image 
-                                                    src="/icons8-linkedin.svg" 
-                                                    alt="LinkedIn" 
-                                                    width={20} 
-                                                    height={20} 
-                                                    className="h-5 w-5" 
+                                                <Image
+                                                    src="/icons8-linkedin.svg"
+                                                    alt="LinkedIn"
+                                                    width={20}
+                                                    height={20}
+                                                    className="h-5 w-5"
                                                 />
                                             </a>
                                             <a
@@ -280,12 +289,12 @@ export default function TeamPage() {
                                                 rel="noopener noreferrer"
                                                 className="text-gray-600 hover:text-gray-800 transition-colors"
                                             >
-                                                <Image 
-                                                    src="/icons8-x-logo.svg" 
-                                                    alt="X (Twitter)" 
-                                                    width={20} 
-                                                    height={20} 
-                                                    className="h-5 w-5" 
+                                                <Image
+                                                    src="/icons8-x-logo.svg"
+                                                    alt="X (Twitter)"
+                                                    width={20}
+                                                    height={20}
+                                                    className="h-5 w-5"
                                                 />
                                             </a>
                                         </div>
