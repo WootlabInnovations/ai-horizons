@@ -1,6 +1,6 @@
 "use client";
 
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ToastProvider } from "@/src/components/ToastProvider";
 import { ApplicationForm } from "@/src/components/ui/ApplicationForm";
 const queryClient = new QueryClient();

@@ -1,6 +1,6 @@
 "use client";
 import dynamic from "next/dynamic";
-import { QueryClient, QueryClientProvider } from "react-query";
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ToastProvider } from "@/src/components/ToastProvider";
 
 const ApplicationStatusDashboard = dynamic(
