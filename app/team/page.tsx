@@ -8,80 +8,43 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function TeamPage() {
-    // Team members data
-    // const leadershipTeam = [
-    //     {
-    //         name: "Chioma Okoro",
-    //         role: "COO Wootlab Innovations",
-    //         bio: "",
-    //         image: "/chi.jpg",
-    //         social: {
-    //             linkedin: "https://linkedin.com/in/sarahjohnson",
-    //             twitter: "https://twitter.com/sarahjohnson",
-    //             website: "https://sarahjohnson.com"
-    //         }
-    //     },
-    //     {
-    //         name: "Chiamaka Jonathan",
-    //         role: "General Manager",
-    //         bio: "",
-    //         image: "/chiamaka.png",
-    //         social: {
-    //             linkedin: "https://linkedin.com/in/michaelchen",
-    //             twitter: "https://twitter.com/michaelchen"
-    //         }
-    //     },
-    //     {
-    //         name: "Benaiah Yusuf",
-    //         role: "Engineering Team Lead (Wootlab Innovations)",
-    //         bio: "Education innovator with experience developing AI curricula at MIT. PhD in Educational Technology with a focus on adaptive learning systems.",
-    //         image: "/ben.jpg",
-    //         social: {
-    //             linkedin: "https://linkedin.com/in/amaraokafor",
-    //             website: "https://amaraokafor.edu"
-    //         }
-    //     },
-    //     {
-    //         name: "Ayobami",
-    //         role: "Business Development Team Lead - Wootlab Innovations",
-    //         bio: "Former Business Development Director at IBM's AI division. Extensive experience in creating industry partnerships and placement programs.",
-    //         image: "/ayo.jpg",
-    //         social: {
-    //             linkedin: "https://linkedin.com/in/jamesrodriguez",
-    //             twitter: "https://twitter.com/jamesrodriguez"
-    //         }
-    //     }
-    // ];
-
     const mentors = [
         {
             name: "Benaiah Yusuf",
-            expertise: "Natural Language Processing",
-            company: "OpenAI",
-            bio: "Senior Research Scientist specializing in large language models and their applications in education and healthcare.",
-            image: "/ben.jpg"
+            expertise: "Senior Software Engineer",
+            company: "Wootlab Innovations",
+            bio: "Passionate about building robust, scalable systems that solve real-world problems. With a decade of experience architecting enterprise solutions, Benaiah specializes in full-stack development and mentoring the next generation of developers.",
+            image: "/ben.jpg",
+            linkedin: "https://linkedin.com/in/benaiah-yusuf",
+            twitter: "https://x.com/benaiah_yusuf"
+        },
+        {
+            name: "Ayobami Oluwarotimi",
+            expertise: "Business Expert",
+            company: "Wootlab Innovations",
+            bio: "Strategic visionary who transforms innovative ideas into market-ready solutions. With extensive experience in product management and business development, Ayobami bridges the gap between technology and business success.",
+            image: "/partner/ayo.jpg",
+            linkedin: "https://linkedin.com/in/ayobami-oluwarotimi",
+            twitter: "https://twitter.com/ayobami_o"
         },
         {
             name: "Chimdidu Ozowolu",
-            expertise: "Computer Vision",
-            company: "Tesla",
-            bio: "Lead Engineer working on autonomous driving systems with expertise in real-time image processing and neural networks.",
-            image: "/wootlab.png"
+            expertise: "Software Engineer",
+            company: "Wootlab Innovations",
+            bio: "Creative problem-solver with a passion for clean code and user-centric design. Specializes in modern web technologies and API development, bringing fresh perspectives to complex technical challenges.",
+            image: "/partner/ibm.svg",
+            linkedin: "https://linkedin.com/in/chimdidu-ozowolu",
+            twitter: "https://twitter.com/chimdidu_oz"
         },
         {
             name: "Agaba Sylvester",
-            expertise: "AI Ethics & Governance",
-            company: "AI Ethics Institute",
-            bio: "Policy advisor and researcher focused on creating ethical frameworks for AI deployment in critical sectors.",
-            image: "/passport.jpg"
+            expertise: "Software Engineer",
+            company: "Wootlab Innovations",
+            bio: "Detail-oriented engineer who thrives on creating seamless digital experiences. Combines technical expertise with a keen eye for performance optimization and innovative solution design.",
+            image: "/passport.jpg",
+            linkedin: "https://linkedin.com/in/agaba-sylvester",
+            twitter: "https://twitter.com/agaba_sylvester"
         },
-        {
-            name: "Dr. Carlos Mendez",
-            expertise: "Reinforcement Learning",
-            company: "DeepMind",
-            bio: "Research scientist working on advanced reinforcement learning algorithms for complex decision-making systems.",
-            image: "/wootlab.png"
-        }
     ];
 
     return (
@@ -97,7 +60,7 @@ export default function TeamPage() {
                     >
                         <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">Our Team & Mentors</h1>
                         <p className="text-lg md:text-xl text-muted-foreground mb-8">
-                            Meet the experts and visionaries shaping the future of AI education at AI-Horizons.
+                            Meet the experts and visionaries shaping the future of AI education at Elevate.
                         </p>
                     </motion.div>
                 </div>
@@ -115,7 +78,7 @@ export default function TeamPage() {
                     >
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Leadership Team</h2>
                         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-                            The visionaries and experts leading AI-Horizons toward excellence in AI education.
+                            The visionaries and experts leading Elevate toward excellence in AI education.
                         </p>
                     </motion.div>
 
@@ -180,9 +143,9 @@ export default function TeamPage() {
                         >
                             <h2 className="text-3xl font-bold tracking-tighter mb-6">Why Join Our Team?</h2>
                             <p className="text-lg text-muted-foreground mb-6">
-                                At AI-Horizons, we&apos;re building a community of passionate educators, researchers, and industry experts dedicated to shaping the future of AI education.
+                                At Elevate, we&apos;re building a community of passionate educators, researchers, and industry experts dedicated to shaping the future of AI education.
                             </p>
-                            
+
                             <div className="space-y-4 mt-8">
                                 <div className="flex items-start gap-4">
                                     <div className="bg-primary/10 p-2 rounded-full mt-1">
@@ -193,7 +156,7 @@ export default function TeamPage() {
                                         <p className="text-muted-foreground">Work alongside leading experts in AI research, education, and industry application.</p>
                                     </div>
                                 </div>
-                                
+
                                 <div className="flex items-start gap-4">
                                     <div className="bg-primary/10 p-2 rounded-full mt-1">
                                         <Sparkles className="h-5 w-5 text-primary" />
@@ -203,7 +166,7 @@ export default function TeamPage() {
                                         <p className="text-muted-foreground">Contribute to cutting-edge educational approaches that are shaping the next generation of AI practitioners.</p>
                                     </div>
                                 </div>
-                                
+
                                 <div className="flex items-start gap-4">
                                     <div className="bg-primary/10 p-2 rounded-full mt-1">
                                         <BookOpen className="h-5 w-5 text-primary" />
@@ -213,7 +176,7 @@ export default function TeamPage() {
                                         <p className="text-muted-foreground">Access to professional development opportunities and the latest advancements in AI technology.</p>
                                     </div>
                                 </div>
-                                
+
                                 <div className="flex items-start gap-4">
                                     <div className="bg-primary/10 p-2 rounded-full mt-1">
                                         <Award className="h-5 w-5 text-primary" />
@@ -224,7 +187,7 @@ export default function TeamPage() {
                                     </div>
                                 </div>
                             </div>
-                            
+
                             <div className="mt-8">
                                 <Link href="/careers">
                                     <Button className="group">
@@ -234,7 +197,7 @@ export default function TeamPage() {
                                 </Link>
                             </div>
                         </motion.div>
-                        
+
                         <motion.div
                             className="relative h-[400px] rounded-xl overflow-hidden shadow-xl"
                             initial={{ opacity: 0, x: 20 }}
@@ -244,7 +207,7 @@ export default function TeamPage() {
                         >
                             <Image
                                 src="/team.jpg"
-                                alt="AI-Horizons team collaboration"
+                                alt="Elevate team collaboration"
                                 fill
                                 className="object-cover"
                             />
@@ -295,7 +258,37 @@ export default function TeamPage() {
                                         <h3 className="text-xl font-semibold mb-1">{mentor.name}</h3>
                                         <p className="text-primary font-medium mb-1">{mentor.expertise}</p>
                                         <p className="text-sm text-muted-foreground mb-3">{mentor.company}</p>
-                                        <p className="text-muted-foreground text-sm">{mentor.bio}</p>
+                                        <p className="text-muted-foreground text-sm mb-4">{mentor.bio}</p>
+                                        <div className="flex gap-3">
+                                            <a
+                                                href={mentor.linkedin}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-blue-600 hover:text-blue-800 transition-colors"
+                                            >
+                                                <Image 
+                                                    src="/icons8-linkedin.svg" 
+                                                    alt="LinkedIn" 
+                                                    width={20} 
+                                                    height={20} 
+                                                    className="h-5 w-5" 
+                                                />
+                                            </a>
+                                            <a
+                                                href={mentor.twitter}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-gray-600 hover:text-gray-800 transition-colors"
+                                            >
+                                                <Image 
+                                                    src="/icons8-x-logo.svg" 
+                                                    alt="X (Twitter)" 
+                                                    width={20} 
+                                                    height={20} 
+                                                    className="h-5 w-5" 
+                                                />
+                                            </a>
+                                        </div>
                                     </CardContent>
                                 </Card>
                             </motion.div>

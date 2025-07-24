@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "AI-Horizons - Building Tomorrow's AI Leaders Today",
+  title: "Elevate - Building Tomorrow's AI Leaders Today",
   description:
     "Empowering the next generation through hands-on AI education, practical projects, and industry mentorship.",
 };

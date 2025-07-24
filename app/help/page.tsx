@@ -27,7 +27,7 @@ export default function HelpPage() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     setFormStatus('submitting');
-    
+
     // Simulate form submission
     setTimeout(() => {
       console.log('Form submitted:', formData);
@@ -38,7 +38,7 @@ export default function HelpPage() {
         subject: '',
         message: ''
       });
-      
+
       // Reset form status after 3 seconds
       setTimeout(() => setFormStatus('idle'), 3000);
     }, 1500);
@@ -74,7 +74,7 @@ export default function HelpPage() {
               transition={{ duration: 0.5, delay: 0.2 }}
             >
               <h2 className="text-3xl font-bold tracking-tighter mb-8">Contact Information</h2>
-              
+
               <div className="space-y-8">
                 <Card>
                   <CardContent className="p-6 flex items-start gap-4">
@@ -84,8 +84,8 @@ export default function HelpPage() {
                     <div>
                       <h3 className="font-semibold mb-1">Email Us</h3>
                       <p className="text-muted-foreground mb-2">For general inquiries and support</p>
-                      <a href="mailto:info@ai-horizons.com" className="text-primary hover:underline">
-                        info@ai-horizons.com
+                      <a href="mailto:info@Elevate.com" className="text-primary hover:underline">
+                        info@Elevate.com
                       </a>
                     </div>
                   </CardContent>
@@ -142,7 +142,7 @@ export default function HelpPage() {
               transition={{ duration: 0.5, delay: 0.4 }}
             >
               <h2 className="text-3xl font-bold tracking-tighter mb-8">Send Us a Message</h2>
-              
+
               <Card>
                 <CardContent className="p-6">
                   <form onSubmit={handleSubmit} className="space-y-6">
@@ -160,7 +160,7 @@ export default function HelpPage() {
                         required
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="email" className="block text-sm font-medium mb-2">
                         Email Address
@@ -175,7 +175,7 @@ export default function HelpPage() {
                         required
                       />
                     </div>
-                    
+
                     <div>
                       <label htmlFor="subject" className="block text-sm font-medium mb-2">
                         Subject
@@ -196,7 +196,7 @@ export default function HelpPage() {
                         <option value="other">Other</option>
                       </select>
                     </div>
-                    
+
                     <div>
                       <label htmlFor="message" className="block text-sm font-medium mb-2">
                         Your Message
@@ -211,10 +211,10 @@ export default function HelpPage() {
                         required
                       ></textarea>
                     </div>
-                    
-                    <Button 
-                      type="submit" 
-                      className="w-full" 
+
+                    <Button
+                      type="submit"
+                      className="w-full"
                       disabled={formStatus === 'submitting'}
                     >
                       {formStatus === 'submitting' ? (
@@ -229,7 +229,7 @@ export default function HelpPage() {
                         </span>
                       )}
                     </Button>
-                    
+
                     {formStatus === 'error' && (
                       <p className="text-destructive text-sm mt-2">
                         There was an error sending your message. Please try again.
@@ -258,7 +258,7 @@ export default function HelpPage() {
               Find answers to common questions and access helpful resources.
             </p>
           </motion.div>
-          
+
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -285,7 +285,7 @@ export default function HelpPage() {
                 </CardContent>
               </Card>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -311,7 +311,7 @@ export default function HelpPage() {
                 </CardContent>
               </Card>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}

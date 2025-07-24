@@ -19,7 +19,7 @@ export default function AboutPage() {
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">About AI-Horizons</h1>
+                        <h1 className="text-4xl md:text-5xl font-bold tracking-tighter mb-4">About Elevate</h1>
                         <p className="text-lg md:text-xl text-muted-foreground mb-8">
                             Building tomorrow&apos;s AI leaders through education, mentorship, and hands-on experience.
                         </p>
@@ -39,7 +39,7 @@ export default function AboutPage() {
                         >
                             <h2 className="text-3xl font-bold tracking-tighter mb-6">Our Mission</h2>
                             <p className="text-lg text-muted-foreground mb-6">
-                                At AI-Horizons, we&apos;re dedicated to empowering the next generation of AI leaders through comprehensive education, practical experience, and industry mentorship.
+                                At Elevate, we&apos;re dedicated to empowering the next generation of AI leaders through comprehensive education, practical experience, and industry mentorship.
                             </p>
                             <p className="text-lg text-muted-foreground mb-6">
                                 We believe that AI technology has the potential to solve some of humanity&apos;s most pressing challenges, but only if we develop diverse, ethical, and skilled practitioners who can guide its evolution.
@@ -60,7 +60,7 @@ export default function AboutPage() {
                                 width={1000}
                                 height={1000}
                                 src="/comp.jpg"
-                                alt="AI-Horizons students collaborating"
+                                alt="Elevate students collaborating"
                                 className="w-full object-cover rounded-xl"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
@@ -82,7 +82,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.5 }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Our Core Values</h2>
-                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">These principles guide everything we do at AI-Horizons, from curriculum development to mentorship approaches.</p>
+                        <p className="text-xl text-muted-foreground max-w-2xl mx-auto">These principles guide everything we do at Elevate, from curriculum development to mentorship approaches.</p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -184,7 +184,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.5 }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Our Story</h2>
-                        <p className="text-xl text-muted-foreground">The journey of AI-Horizons from concept to leading AI education platform.</p>
+                        <p className="text-xl text-muted-foreground">The journey of Elevate from concept to leading AI education platform.</p>
                     </motion.div>
 
                     <div className="space-y-12">
@@ -206,7 +206,7 @@ export default function AboutPage() {
                                 <Card>
                                     <CardContent className="p-6">
                                         <p className="italic text-muted-foreground">
-                                            &apos;We started AI-Horizons with a simple mission: to make AI education more accessible, practical, and aligned with industry needs. We saw too many students graduating with theoretical knowledge but lacking the practical skills to succeed in AI careers.&apos;
+                                            &apos;We started Elevate with a simple mission: to make AI education more accessible, practical, and aligned with industry needs. We saw too many students graduating with theoretical knowledge but lacking the practical skills to succeed in AI careers.&apos;
                                         </p>
                                         <p className="mt-4 font-semibold">— Dr. Sarah Johnson, Co-founder</p>
                                     </CardContent>
@@ -284,7 +284,7 @@ export default function AboutPage() {
                                 <Card>
                                     <CardContent className="p-6">
                                         <p className="italic text-muted-foreground">
-                                            &apos;What makes AI-Horizons special is our community. We&apos;ve created an ecosystem where students, alumni, mentors, and industry partners collaborate to push the boundaries of what&apos;s possible with AI while ensuring it&apos;s developed responsibly.&apos;
+                                            &apos;What makes Elevate special is our community. We&apos;ve created an ecosystem where students, alumni, mentors, and industry partners collaborate to push the boundaries of what&apos;s possible with AI while ensuring it&apos;s developed responsibly.&apos;
                                         </p>
                                         <p className="mt-4 font-semibold">— Benaiah Yusuf, Engineering Team Lead (Wootlab Innovations)</p>
                                     </CardContent>
@@ -306,7 +306,7 @@ export default function AboutPage() {
                         transition={{ duration: 0.5 }}
                     >
                         <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Our Leadership Team</h2>
-                        <p className="text-xl text-muted-foreground">Meet the experienced professionals guiding AI-Horizons.</p>
+                        <p className="text-xl text-muted-foreground">Meet the experienced professionals guiding Elevate.</p>
                     </motion.div>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -433,7 +433,7 @@ export default function AboutPage() {
                         viewport={{ once: true }}
                         transition={{ duration: 0.5 }}
                     >
-                        <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Join the AI-Horizons Community</h2>
+                        <h2 className="text-3xl md:text-4xl font-bold tracking-tighter mb-4">Join the Elevate Community</h2>
                         <p className="text-lg md:text-xl text-muted-foreground mb-8">
                             Ready to start your journey in AI? Explore our programs and take the first step toward a transformative career.
                         </p>
