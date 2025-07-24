@@ -244,7 +244,7 @@ export default function TeamPage() {
                         </p>
                     </motion.div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
                         {mentors.map((mentor, index) => (
                             <motion.div
                                 key={mentor.name}
@@ -252,51 +252,68 @@ export default function TeamPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ duration: 0.5, delay: index * 0.1 }}
+                                whileHover={{ y: -4 }}
+                                className="group"
                             >
-                                <Card className="h-full overflow-hidden transition-all hover:shadow-lg">
-                                    <div className="relative aspect-square overflow-hidden bg-muted">
+                                <Card className="h-full overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-primary/5 border border-gray-200/50">
+                                    <div className="relative aspect-square overflow-hidden">
                                         <Image
                                             src={mentor.image}
                                             alt={mentor.name}
                                             width={300}
                                             height={300}
-                                            className="h-full w-full object-cover transition-transform hover:scale-105"
+                                            className="h-full w-full object-cover transition-all duration-300 group-hover:scale-105"
                                         />
+                                        <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                                     </div>
-                                    <CardContent className="p-6">
-                                        <h3 className="text-xl font-semibold mb-1">{mentor.name}</h3>
-                                        <p className="text-primary font-medium mb-1">{mentor.expertise}</p>
-                                        <p className="text-sm text-muted-foreground mb-3">{mentor.company}</p>
-                                        <p className="text-muted-foreground text-sm mb-4">{mentor.bio}</p>
-                                        <div className="flex gap-3">
-                                            <a
-                                                href={mentor.linkedin}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-blue-600 hover:text-blue-800 transition-colors"
-                                            >
-                                                <Image
-                                                    src="/icons8-linkedin.svg"
-                                                    alt="LinkedIn"
-                                                    width={20}
-                                                    height={20}
-                                                    className="h-5 w-5"
-                                                />
-                                            </a>
-                                            <a
-                                                href={mentor.twitter}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                className="text-gray-600 hover:text-gray-800 transition-colors"
-                                            >
-                                                <Image
-                                                    src="/icons8-x-logo.svg"
-                                                    alt="X (Twitter)"
-                                                    width={20}
-                                                    height={20}
-                                                    className="h-5 w-5"
-                                                />
-                                            </a>
+                                    <CardContent className="p-4">
+                                        <div className="space-y-2">
+                                            <div>
+                                                <h3 className="text-lg font-bold mb-1 text-gray-900 dark:text-white group-hover:text-primary transition-colors duration-300 line-clamp-1">
+                                                    {mentor.name}
+                                                </h3>
+                                                <p className="text-primary font-medium text-xs uppercase tracking-wide line-clamp-1">
+                                                    {mentor.expertise}
+                                                </p>
+                                                <p className="text-xs text-muted-foreground mt-1 line-clamp-1">
+                                                    {mentor.company}
+                                                </p>
+                                            </div>
+                                            
+                                            <p className="text-muted-foreground text-xs leading-relaxed line-clamp-3">
+                                                {mentor.bio}
+                                            </p>
+                                            
+                                            <div className="flex gap-2 pt-1">
+                                                <a
+                                                    href={mentor.linkedin}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="p-1.5 rounded-full bg-blue-50 hover:bg-blue-100 transition-all duration-200 hover:scale-105"
+                                                >
+                                                    <Image
+                                                        src="/icons8-linkedin.svg"
+                                                        alt="LinkedIn"
+                                                        width={14}
+                                                        height={14}
+                                                        className="h-3.5 w-3.5"
+                                                    />
+                                                </a>
+                                                <a
+                                                    href={mentor.twitter}
+                                                    target="_blank"
+                                                    rel="noopener noreferrer"
+                                                    className="p-1.5 rounded-full bg-gray-50 hover:bg-gray-100 transition-all duration-200 hover:scale-105"
+                                                >
+                                                    <Image
+                                                        src="/icons8-x-logo.svg"
+                                                        alt="X (Twitter)"
+                                                        width={14}
+                                                        height={14}
+                                                        className="h-3.5 w-3.5"
+                                                    />
+                                                </a>
+                                            </div>
                                         </div>
                                     </CardContent>
                                 </Card>
