@@ -521,6 +521,13 @@ export function ApplicationForm() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-8 bg-background border border-border rounded-lg shadow-sm">
+      <div className="bg-muted/30 border-l-4 border-primary text-yellow-900 p-4 rounded-md mb-6 text-sm">
+        <strong>Disclaimer:</strong> Once this application form is submitted,
+        you will not be allowed to make edits. Please ensure all information is
+        accurate before submitting. If you need to make changes, please contact
+        us at <strong>engineering@wootlab.ng</strong>
+      </div>
+
       <h1 className="text-2xl font-bold mb-6">
         Apply for AI Summer Internship
       </h1>
@@ -548,7 +555,7 @@ export function ApplicationForm() {
         ))}
       </div>
 
-      <div className="py-6">{/* Call renderStep() here */ renderStep()}</div>
+      <div className="py-6">{renderStep()}</div>
 
       <div className="flex justify-between pt-6 border-t border-border mt-6">
         <Button
