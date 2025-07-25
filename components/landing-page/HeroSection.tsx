@@ -60,7 +60,7 @@ export default function HeroSection() {
                         </Button>
                     </motion.div>
 
-                    <motion.div
+                    {/* <motion.div
                         className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 text-white/90 text-center"
                         initial={{ opacity: 0 }}
                         animate={{ opacity: 1 }}
@@ -102,7 +102,7 @@ export default function HeroSection() {
                             <p className="text-xl font-semibold text-primary">8</p>
                             <p className="text-sm">Real-world AI projects</p>
                         </motion.div>
-                    </motion.div>
+                    </motion.div> */}
                 </div>
             </div>
             
