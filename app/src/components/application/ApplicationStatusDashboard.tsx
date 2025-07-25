@@ -109,8 +109,8 @@ export default function ApplicationStatusDashboard() {
               />
               <strong
                 className={`text-${
-                  currentState?.color || "gray"
-                }-700 capitalize font-semibold text-lg`}
+                  currentState?.color || "white"
+                }-700 capitalize font-semibold text-lg bg-primary rounded-md px-4 py-3`}
               >
                 {currentState?.label || "Pending Review"}
               </strong>
